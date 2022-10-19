@@ -149,12 +149,6 @@ input:valid {
 	outline: 1px solid greenyellow;
 }
 
-/* JS Class */
-
-.error {
-	outline: 1px solid tomato;
-}
-
 /* Button Section */
 
 .btn-section > button {

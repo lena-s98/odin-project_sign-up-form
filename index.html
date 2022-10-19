@@ -41,31 +41,51 @@
 				<section class="header-paragraph-section">
 					<p class="header-paragraph">
 						This is not a real online service! You know you need something like
-						this in your life to help you realize your deepest dreams. Sign up
-						now to get started.
+						this in your life to help you realize your deepest dreams. <br />
+						Sign up <em>now</em> to get started.
 					</p>
-					<p>You know you want to.</p>
+					<p>You <em>know</em> you want to.</p>
 				</section>
 				<section class="form-section">
 					<p class="form-header">Let's do this!</p>
 					<form method="post">
-						<label for="first-name">First Name</label>
-						<input type="text" name="first-name" id="first-name" />
-						<label for="last-name">Last Name</label>
-						<input type="text" name="last-name" id="last-name" />
-						<label for="email">Email</label>
-						<input type="email" name="email" id="email" />
-						<label for="tel">Phone Number</label>
-						<input type="tel" name="tel" id="tel" />
-						<label for="password">Password</label>
-						<input type="password" name="password" id="password" />
-						<label for="confirmation">Confirm Password</label>
-						<input type="password" name="confirm" id="confirm" />
+						<div class="flex">
+							<div>
+								<label for="first-name">First Name</label>
+								<input type="text" name="first-name" id="first-name" required />
+							</div>
+							<div>
+								<label for="last-name">Last Name</label>
+								<input type="text" name="last-name" id="last-name" required />
+							</div>
+						</div>
+						<div class="flex">
+							<div>
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" required />
+							</div>
+							<div>
+								<label for="tel">Phone Number</label>
+								<input type="tel" name="tel" id="tel" required />
+							</div>
+						</div>
+						<div class="flex">
+							<div>
+								<label for="password">Password</label>
+								<input type="password" name="password" id="password" required />
+							</div>
+							<div>
+								<label for="confirmation">Confirm Password</label>
+								<input type="password" name="confirm" id="confirm" required />
+							</div>
+						</div>
 					</form>
 				</section>
 				<section class="btn-section">
 					<button>Create Account</button>
-					<p>Already have an account? <a href="#" class="log-in">Log in</a></p>
+					<p>
+						Already have an account? <a href="#" class="log-in-link">Log in</a>
+					</p>
 				</section>
 			</main>
 		</div>

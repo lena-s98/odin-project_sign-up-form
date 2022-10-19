@@ -12,7 +12,6 @@
 }
 
 body {
-	border: 1px solid red;
 	font-family: "Roboto", sans-serif;
 }
 
@@ -28,14 +27,13 @@ a {
 .wrapper {
 	display: flex;
 	width: 100%;
-	border: 2px solid green;
+	height: 100vh;
 }
 
 /* Header Section */
 
 header {
-	width: 28%;
-	border: 2px solid pink;
+	width: 25%;
 }
 
 .hero-banner {
@@ -44,7 +42,7 @@ header {
 	background-image: url("resources/img/halie-west-25xggax4bSA-unsplash.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
+	height: 100%;
 }
 
 .logo-container {
@@ -53,33 +51,128 @@ header {
 	align-items: center;
 	width: 100%;
 	margin-top: 8rem;
+	padding: 0.5rem 0;
 	background-color: hsl(0, 0%, 0%, 0.5);
 	color: white;
 }
 
 .logo {
-	width: 15%;
+	width: 20%;
 }
 
 .logo-caption {
 	font-family: "nordic", sans-serif;
-	font-size: 5rem;
+	font-size: 4rem;
 }
 
 figcaption {
 	color: white;
-	border: 1px solid white;
 	margin-top: auto;
 	text-align: center;
 }
 
 /* Main Content Section */
 
-main {
-	width: 66%;
+.content {
+	width: 75%;
 }
 
-label,
-input {
+.header-paragraph-section {
+	padding: 5rem 0;
+	font-size: 1.2rem;
+}
+
+.header-paragraph-section p {
+	font-weight: bold;
+	width: 50%;
+	line-height: 1.5;
+}
+
+.header-paragraph-section > p + p {
+	padding: 1rem 0 0 0;
+}
+
+.header-paragraph-section,
+.form-section,
+.btn-section {
+	padding-left: 2.5rem;
+}
+
+.header-paragraph-section,
+.btn-section {
+	background-color: rgb(246, 249, 255);
+}
+
+/* Form Styling */
+
+.form-section {
+	box-shadow: 4px 5px 8px gray;
+	padding: 1.5rem 0 1.5rem 2.5rem;
+}
+
+.form-header {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: hsl(0, 0%, 15%);
+	margin-bottom: 1rem;
+}
+
+.form-section label {
 	display: block;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	margin-top: 1.25rem;
+}
+
+.form-section div.flex {
+	display: flex;
+	width: 50%;
+}
+
+.form-section div {
+	width: 100%;
+}
+
+input {
+	padding: 0.25rem;
+	width: 80%;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+
+input:focus {
+	outline: 1px solid blue;
+	box-shadow: 2px 2px 5px gray;
+}
+
+input:valid {
+	outline: 1px solid greenyellow;
+}
+
+/* Button Section */
+
+.btn-section > button {
+	padding: 0.5rem 1.5rem;
+	margin: 2rem 0;
+	box-shadow: 5px 5px 8px rgb(193, 193, 193);
+	background-color: #596d48;
+	font-size: 1rem;
+	border-radius: 8px;
+	color: white;
+	cursor: pointer;
+}
+
+.btn-section > button:hover {
+	background-color: hsl(92, 20%, 45%);
+}
+
+.log-in-link {
+	color: #596d48;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.log-in-link:hover {
+	color: hsl(92, 20%, 45%);
+	text-decoration: underline;
 }
